@@ -8,6 +8,7 @@ import pojo.BeanDefinition;
 import pojo.MutablePropertyValue;
 import pojo.PropertyValue;
 import registry.BeanDefinitionRegistry;
+import registry.SimpleBeanDefinitionRegistry;
 
 import java.io.InputStream;
 import java.util.List;
@@ -20,6 +21,10 @@ public class XmlBeanDefinitionReader implements BeanDefinitionReader {
 
     //声明注册表对象
     private BeanDefinitionRegistry registry;
+
+    public XmlBeanDefinitionReader() {
+        registry=new SimpleBeanDefinitionRegistry();
+    }
 
     public XmlBeanDefinitionReader(BeanDefinitionRegistry registry) {
         this.registry = registry;

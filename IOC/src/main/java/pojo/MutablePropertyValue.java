@@ -3,8 +3,6 @@ package pojo;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Spliterator;
-import java.util.function.Consumer;
 
 /**
  * 一个bean标签可以有多个Property子标签，这个类用来管理并存储多个PropertyValue类
